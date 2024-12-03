@@ -63,3 +63,21 @@ tải rules snort
 ```bash
 wget https://www.snort.org/rules/community -O ~/commynity.tar.gz
 ```
+
+giải nén:
+```bash
+sudo tar -xvf ~/commynity.tar.gz -C ~/
+```
+
+```bash
+sudo cp ~/community-rules/* /etc/snort/rules
+```
+
+```bash
+sudo snort -T -c /etc/snort/snort.conf
+```
+
+```bash
+alert icmp any nay -> $HOME_NET any (msg:"Hello Bi Ping";sid:10000001; rev:001;)
+```
+                                                    
