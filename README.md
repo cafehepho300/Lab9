@@ -35,7 +35,11 @@ sudo iptables -A INPUT -p tcp --dport 21 -j DROP
 sudo iptables -A INPUT -p tcp --dport 20 -j DROP
 ```
 Cho phép/cấm telnet:
+Cho phép:
 ```bash
 sudo iptables -A INPUT -p tcp --dport 23 -j ACCEPT
 ```
 Cấm:
+```bash
+sudo iptables -A INPUT -p tcp --dport 23 -j DROP
+```
