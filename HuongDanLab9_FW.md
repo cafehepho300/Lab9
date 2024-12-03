@@ -3,7 +3,10 @@ Xem danh sách quy tắc đã cài vào:
 ```bash
 iptables -L
 ```
-
+Liệt kê tất cả:
+```bash
+sudo iptables -L -n -v --line-number
+```
 xóa quy tất cả quy tắc đã thêm:
 ```bash
 iptables -F
