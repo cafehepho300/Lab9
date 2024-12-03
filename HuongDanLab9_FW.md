@@ -53,3 +53,13 @@ Cấm:
 ```bash
 sudo iptables -A INPUT -p tcp --dport 23 -j DROP
 ```
+
+cài đặt snort:
+```bash
+sudo apt install snort -y
+```
+
+tải rules snort 
+```bash
+wget https://www.snort.org/rules/community -O ~/commynity.tar.gz
+```
