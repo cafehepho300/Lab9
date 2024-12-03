@@ -1,6 +1,13 @@
 # Lab9
----------Kiểm tra: iptables -L
+Xem danh sách quy tắc đã cài vào: 
+```bash
+iptables -L
+```
 
+xóa quy tất cả quy tắc đã thêm:
+```bash
+iptables -F
+```
 Cho phép/cấm ICMP (ping)
 Cho phép: 
 ```bash
